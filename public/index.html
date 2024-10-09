@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Buy On</title>
+</head>
+<body>
+    <!-- navbar -->
+     <nav class="p-3 flex bg-white justify-between items-center fixed top-0 left-0 right-0 z-20 shadow-md">
+        <a href="#" id="brand" class="flex gap-2 items-center flex-1">
+            <img src="../images/logo.jpg" class="object-cover max-w-12 max-h-12 rounded-lg " alt="logo">
+            <span class="text-lg font-medium font-main">BuyOn</span>
+        </a>
+        <div id="nav-menu" class="hidden lg:flex gap-12  ">
+            <a href="#" class="font-medium hover:text-gray-800 ">Home</a>
+            <a href="#" class="font-medium hover:text-gray-800 ">Products</a>
+            <a href="#" class="font-medium hover:text-gray-800 ">Contact Us</a>
+            <a href="#" class="font-medium hover:text-gray-800 ">Login</a>
+            <a href="#" class="font-medium hover:text-gray-800 ">Sign up</a> 
+        </div>
+        <div class="hidden lg:flex flex-1 justify-end">
+            <button class="flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+                <span class="font-main font-medium">Tailwind Project</span>
+            </button>
+        </div>
+        <button class="p-2 lg:hidden " onclick="menu()">
+            <i class='bx bx-menu text-gray-600'></i>
+        </button>
+        <div id="dialog" class="hidden fixed z-10 md:hidden bg-white inset-0 p-3 ">
+            <div id="nav-bar" class="flex justify-between ">
+                <a href="#" id="brand" class="flex gap-2 items-center">
+                    <img src="../images/logo.jpg" class="object-cover max-w-12 max-h-12 rounded-lg " alt="logo">
+                    <span class="text-lg font-medium font-main">BuyOn</span>
+                </a>
+                <button class="p-2 md:hidden " onclick="menu()">
+                    <i class='bx bx-x text-gray-600'></i>
+                 </button>
+            </div>
+            <div class="mt-6">
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg ">Home</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg ">Products</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg ">Contact Us</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg ">Login</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg ">Sign up</a>
+            </div>
+        </div>
+     </nav>
+
+     <!-- Main -->
+      <main class="mt-16 ">
+        <!-- Hero -->
+         <div class="min-h-screen bg-gradient-to-b from-purple-50 via-violet-100 to-transparent ">
+            <div id="hero-container" class="max-w-4xl mx-auto px-6 pt-6 pb-6 flex flex-col sm:items-center sm:text-center sm:max-w-2xl">
+                <div id="features" class=""></div>
+            </div>
+         </div>
+
+      </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
