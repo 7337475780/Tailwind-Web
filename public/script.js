@@ -7,7 +7,7 @@ function menu() {
 const initialTranslateLTR = -48*4;
 const initialTranslateRTL = 36*4;
 
-function setUpIntersectionObserver(element, isLTR, speed) {
+function setupIntersectionObserver(element, isLTR, speed) {
     const intersectionCallback = (entries) => {
         const isIntersecting = entries[0].isIntersecting;
         if(isIntersecting) {
@@ -16,7 +16,7 @@ function setUpIntersectionObserver(element, isLTR, speed) {
             document.removeEventListener('scroll', scrollHandler);
         }
     }
-    const intersectionObserver = new intersectionObserver(intersectionCallback);
+    const intersectionObserver = new IntersectionObserver(intersectionCallback);
 
     intersectionObserver.observe(element);
 
@@ -35,14 +35,14 @@ function setUpIntersectionObserver(element, isLTR, speed) {
 
 }
 
-const line1 = document.getElementById('line-1');
-const line2 = document.getElementById('line-2');
-const line3 = document.getElementById('line-3');
+const line1 = document.getElementById('line1');
+const line2 = document.getElementById('line2');
+const line3 = document.getElementById('line3');
 
 
-setUpIntersectionObserver(line1, true, 0.15);
-setUpIntersectionObserver(line2, false, 0.15);
-setUpIntersectionObserver(line3, true, 0.15);
+setupIntersectionObserver(line1, true, 0.15);
+setupIntersectionObserver(line2, false, 0.15);
+setupIntersectionObserver(line3, true, 0.15);
 
 
 const dtElements = document.querySelectorAll('dt');
