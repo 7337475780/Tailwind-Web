@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         'btn': '#3238f2',
         'ver': '#FEFCE8',
-        'btn-hover': '#464AF1',
+        
       }
     },
   },
