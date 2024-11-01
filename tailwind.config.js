@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'main': ['Poppins', 'sans-serif'],
-        'par': ['Inter', 'sans-serif']
+        'par': ['Inter', 'sans-serif'],
+        
       },
       colors: {
         'btn': '#3238f2',
